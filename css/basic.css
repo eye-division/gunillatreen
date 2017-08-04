@@ -1,0 +1,25 @@
+/* ----------------------------------------------------/
+basic stylesheet for Museum of Oxford pages  
+works for NS 4.8 etc - linked not imported
+(c) 2006 EyeDivision www.eyedivision.co.uk 
+info@eyedivision.co.uk 
+/-----------------------------------------------------*/
+
+h1 { font-size: 1.4em; }
+h2 { font-size: 1.2em; }
+h3 { font-size: 1em; }
+
+B, strong { color: #000000; text-decoration: none ; font-weight: bold; }
+
+body
+{
+	font-family:verdana, helvetica, arial, sans-serif;
+	font-size:100%;
+	color:#000;
+	background-color:#FFF;
+	margin:0px;
+}
+a:link { color: #006666; background-color: #FFF; text-decoration: none; border-bottom: 1px solid #006666; }
+a:visited { color: #006666; background-color: #FFF; text-decoration: none; border-bottom: 1px solid #006666;}
+a:hover { color:#FF9933; background-color: #FFF; text-decoration: none; }
+a:active { color:#FF9933; background-color: #FFF; text-decoration: none;}

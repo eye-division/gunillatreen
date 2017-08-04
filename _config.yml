@@ -6,16 +6,16 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Neat Eye Gallery
-subtitle: A base Eye Gallery built on Bourbon and Neat
-name: Alun Ward
-description: A base theme built on Bourbon and Neat
+title: Gunilla Treen
+subtitle: Gunilla Treen Eye Gallery built on Bourbon and Neat
+name: Gunilla Treen
+description: Gunilla Treen art gallery
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: ""
 # the base hostname & protocol for your site
-url: "http://www.example.com"
+url: "http://www.gunillatreen.co.uk"
 logo: "/siteicon.png"
 email: a.ward@eyedivision.com
 

@@ -1,0 +1,206 @@
+/* main stylesheet */
+/*  */
+/* Alun Ward, 2006 for EyeDivision www.eyedivision.co.uk */
+/* alun@eyedivision.co.uk */
+
+html { 
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	position:relative;
+	font-family:century gothic, verdana, helvetica, arial, sans-serif;
+	font-size:1em;
+	color:#333;
+	line-height:2em;
+	background-color:#CCC;
+	margin:0px;
+	text-align:center;
+	height:100%;
+	padding:0;
+	width: 100%;
+}
+
+#container {
+	line-height:130%;
+	text-align:center;
+	margin: 5px auto;
+	border:1px #999 solid;
+	padding:0px;
+	width:98%;
+	background-color:#FFF;
+}
+
+#content {	
+	padding:0px;
+	margin:5px;	
+	line-height:130%;
+	font-size:small;
+	text-align:left;
+	/*
+	background-color:#FFF;
+	border: 1px solid grey;  */
+}
+a { background-color:#FFF; }
+a:link { color:#999; background-color:#FFF; text-decoration: none; border:none; }
+a:visited { color:#999; background-color:#FFF; text-decoration: none; border:none; }
+a:hover { color:#990000; background-color:#FFF; text-decoration: none; }
+a:active { color:#990000; background-color:#FFF; text-decoration: none;}
+
+#topnav { 
+	text-align:center;
+	font-size:small; 
+	padding:0px; 
+	margin: 0px;
+	/*width:950px; */
+	line-height:140%;
+	background-color:#FFF;
+}
+
+#topnav A { 
+	padding-left:4px; 
+	padding-right:4px;
+	padding-top:0px;
+	padding-bottom:0px;
+	border: none; 
+	text-decoration:none;  
+}
+
+#topnav A:link { color:#000; }
+#topnav A:visited { color:#000; }
+#topnav A:hover { color:#990000; }
+#topnav A:active { color:#990000; }
+
+#topnav a.selected { color:#FFF; background-color:#CC3300; }
+#topnav a.selected:link { color:#FFF; }
+#topnav a.selected:visited { color:#FFF; }
+#topnav a.selected:hover { color:#FFF; }
+#topnav a.selected:active { color:#FFF; }
+
+#main {
+	margin: 0px;	/* t r b l */
+	padding: 0px;  /* t r b l */
+	/* overflow:auto;	 adds scrollbar */
+	height: 100%;
+	/* border: 1px solid black; */
+	background-color:#FFF;
+}
+
+#main H1, #main H2 { padding-top:0px; margin-top:0px;} 
+
+h1 { 	
+	color: #000;
+	font-size: large; 
+	font-weight: bold;
+	padding-top:0px;
+	margin-top:0px;
+}
+h2 { 
+	color: #000;
+	font-size: 1em; 
+	font-weight: bold;
+	padding-top:10px;
+	margin-top:0px;
+}
+h3 { font-size: 0.9em; }
+
+#main P {
+ margin-top:0px;
+}
+
+#left {
+	width: 200px;
+	float: left;
+	padding-top:110px;
+
+}
+#right {
+	margin-left: 210px;
+	text-align:center;
+
+}
+#aboutL {
+	width: 500px;
+	margin-right: 360px;
+
+	text-align:justify;
+	line-height: 140%;
+	margin-left: 10px;
+}
+
+#aboutR {
+	float:right;
+	width:350px;
+	margin-top:0px;
+	padding-top: 0px;
+	text-align:left;
+}
+
+b, strong { font-weight: 900; }
+
+li, ul, ol {  
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+.small { font-size: 10px; }
+
+/* old form stuff 
+form, label, input { font-size : 1em; }
+fieldset { width : 400px; padding : 0.5em 1em; } 
+label { position : relative; width : 15em; display : block; margin : .5em 0em; }
+label input { position : absolute; left : 100%; top : 0px; width : 10em;  }
+input.submit { margin-left : 15em; }
+#top br { display : none; }
+
+*/
+/* form stuff 
+- see http://www.websiteoptimization.com/speed/tweak/forms/
+*/
+form { 
+	/*font-size : 1em; */
+	width: 650px;
+}
+
+select {
+	/*width: 200px;*/
+	text-align: left;	
+}
+
+fieldset { 
+	padding : 10px;
+	margin: 0px;
+	border-color:#CCC;
+	border-style: solid;
+	border-width: 1px;
+} 
+
+form br {
+	clear: left;
+}
+
+label { 	
+	display : block; 
+	float: left;
+	width: 150px;
+	padding: 0px;
+	text-align:right;
+	margin : 5px 0px 0px; 
+}
+
+textarea { overflow: auto; }
+/* end form stuff */
+
+#credits {
+	clear:both;
+	font-size:x-small;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.selected {
+	font-weight: bold;
+	color:#000;
+}
