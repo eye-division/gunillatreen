@@ -9,17 +9,17 @@ plugins:
    - jekyll-tagging-related_posts
 
 # Site settings
-title: An artist
-subtitle: Great artist
-name: An artist
-description: Demo Eye Gallery site
+title: Gunilla Treen
+subtitle:
+name: Gunilla Treen
+description: Gunilla Treen art gallery
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: ""
 # the base hostname & protocol for your site
-url: "https://black-hare.cloudvent.net"
-# apt-loris.cloudvent.net for Jekyll3
+url: "https://www.gunillatreen.co.uk"
+
 
 logo: "/assets/logo.png"
 show_logo: false
@@ -28,7 +28,7 @@ email: a.ward@eyedivision.com
 default_post_image: "/assets/images/road_closed.jpg"
 default_gallery_image: "/assets/images/road_closed.jpg"
 
-show_social_top: true
+show_social_top: false
 
 # Build settings
 markdown: kramdown
@@ -149,36 +149,36 @@ social:
 
   - name: Facebook
     icon: icon-facebook_sign
-    username: 'eyedivision'
-    url: https://www.facebook.com/eyedivision
+    username:
+    url:
     desc: Like us on Facebook
     share: true
 
   - name: Instagram
     icon: icon-instagram
-    username: '@eyedivision'
-    url: https://instagram.com/eyedivision
+    username:
+    url:
     desc: Follow us on Instagram
     share: false
 
   - name: Twitter
     icon: icon-twitter_sign
-    username: '@EyeDivision'
-    url: https://twitter.com/EyeDivision
+    username:
+    url:
     desc: Follow us on Twitter
     share: true
 
   - name: Pinterest
     icon: icon-pinterest
-    username: 'eyediv'
-    url: https://www.pinterest.co.uk/eyediv/
+    username:
+    url:
     desc: Follow us on Pinterest
     share: true
 
   - name: linkedin
     icon: icon-linkedin_sign
-    username: 'eye-division-ltd'
-    url: https://www.linkedin.com/company/eye-division-ltd/
+    username:
+    url:
     desc: Connect with us on LinkedIn
     share: true
 

@@ -10,7 +10,7 @@
           {% if social.url != null %}
           <li class="">
             <a href="{{ social.url }}" title="{{ social.desc }}">
-              <svg class="icon {{ social.icon }}"><use xlink:href="#{{ social.icon }}" /></svg>
+              <svg class="icon {{ social.icon }}" role="img"><title>{{ social.title }}</title><use xlink:href="#{{ social.icon }}" /></svg>
             </a>
           </li>
           {% endif %}
@@ -23,7 +23,6 @@
 
     <div class="site--signature">
       <p class="text">&copy; All work is copyright the artist, no reproduction without permission.<br>
-        <a href="/privacy/">Privacy</a><br>
         Site by <a href="https://eyedivision.com">Eye Division</a></p>
     </div>
 

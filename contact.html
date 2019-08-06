@@ -1,5 +1,6 @@
 ---
 layout: page
+display_title: true
 title: Contact
 permalink: /contact/
 main_image_path:
@@ -13,16 +14,20 @@ _options:
     hidden: true
   permalink:
     hidden: true
-  main_image_path:
-    width: 1200
-    height: 1200
-    resize_style: "contain"
-    mime_type: "image/jpeg"
   image_path:
+    uploads_dir: "assets/images/:year"
     width: 1200
     height: 1200
-    resize_style: "contain"
-    mime_type: "image/jpeg"
+    resize_style: contain
+    mime_type: image/jpeg
+  main_image_path:
+    uploads_dir: "assets/images/:year"
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+  content:
+    uploads_dir: "assets/:year"
 _comments:
   title: Page title
   main_image_path: Image used to represent your page
@@ -32,8 +37,7 @@ _comments:
   frontpagetitle: Alternative title for home page use
 ---
   <div class="editable">
-      <p> <strong>Tel:</strong> 111 1111</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quaerat, tempore ut accusamus, dicta, soluta est unde officia iure dolorem asperiores voluptate quis molestiae. Dolores, porro commodi est ipsum assumenda?</p>
+
   </div>
 
 {% if page.show_form %}

@@ -4,11 +4,19 @@ layout: default
 
 <div class="page">
 
+  {% if page.display_title %}
   <header class="page--header">
-    <h1 class="page--title">{{ page.title }}</h1>
+    <h1 class="page--title text-center">{{ page.title }}</h1>
   </header>
+  {% endif %}
+
+
 
   <article>
+
+    <section class="main--content">
+      {{ content }}
+    </section>
 
     {% if page.main_image_path and page.display_image %}
 
@@ -44,7 +52,7 @@ layout: default
 
           <div class="gallery--box">
 
-            <a href="{% include imgpath.html src=image max-w=1280 %}" class="gallery--link" data-lightbox="gallery" data-title="{{ thisimage.image_title }} - {{ thisimage.image_description_markdown | markdownify }}">
+            <a href="{% include imgpath.html src=image %}" class="gallery--link" data-lightbox="gallery" data-title="{{ thisimage.image_title }}{% if thisimage.image_description_markdown %} {{ thisimage.image_description_markdown | markdownify }}{% endif %}">
 
               {% if page.thumb_crop %}
 
@@ -59,7 +67,7 @@ layout: default
                  <!-- end format images -->
                {% endif %}
 
-               {% if page.display_title %}
+               {% if page.display_thumb_title %}
                   <figcaption class="gallery--caption">{{ thisimage.image_title }}</figcaption>
               {% endif %}
 
@@ -76,11 +84,7 @@ layout: default
 
     {% endif %}
 
-    {% if page.description_markdown %}
-    <section class="main--content">
-      {{ page.description_markdown | markdownify }}
-    </section>
-    {% endif %}
+
 
     {% if page.videos %}
 

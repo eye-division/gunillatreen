@@ -12,11 +12,20 @@ _options:
     hidden: true
   permalink:
     hidden: true
-  main_image_path:
+  image_path:
+    uploads_dir: "assets/images/:year"
     width: 1200
     height: 1200
-    resize_style: "contain"
-    mime_type: "image/jpeg"
+    resize_style: contain
+    mime_type: image/jpeg
+  main_image_path:
+    uploads_dir: "assets/images/:year"
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+  content:
+    uploads_dir: "assets/:year"
 _comments:
   title: Gallery title
   main_image_path: Image used to represent your gallery
@@ -25,32 +34,27 @@ _comments:
 ---
 
 <div class="editable">
-  <p class="strapline">This is an example of the full-width block layout, where promoted galleries and pages take up the full-width of the page. See also the <a href="/grid-layout/">grid layout</a></p>
 
-  <p>Check <a href="/gallery/cropped/">Cropped gallery</a> for an example of the cropped thumbnail layout. Other galleries default to full format thumbnails. Either is possible, on a per gallery basis.</p>
 </div>
 
-<div class="gallery">
+<section class="gallery--list">
 
-<!-- order galleries by date -->
-{% assign galleries = site.gallery | sort: 'gallery_date' | reverse %}
+  <!-- order galleries by date -->
+  {% assign galleries = site.gallery | sort: 'gallery_date' | reverse %}
 
-{% for gallery in galleries %}
+  {% for gallery in galleries %}
 
-     <section class="gallery--cover {% if gallery.main_image_path %}has--cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
-          <a href="{{ gallery.url }}">
-            <div class="scrim {% if gallery.main_image_path %}has--cover{% endif %}">
-            <article class="gallery--front">
-              <header class="gallery--header">
-                <h2 class="cover--title mb0">{{ gallery.title }}</h2>
-              </header>
-              {% if gallery.homepage_description_markdown %}
-              {{ gallery.homepage_description_markdown | markdownify }}  <span class="post--readmore">View gallery <svg class="icon"><use xlink:href="#icon-double_angle_right" /></svg></span>
-                {% endif %}
-          </article>
-          </div>
-        </a>
-      </section>
+     <div class="gallery--box">
 
-{% endfor %}
-</div>
+          <a href="{{ gallery.permalink }}" title="{{ gallery.title }}" class="gallery--link">
+            <!-- cropped square images -->
+              {% include img.html src=gallery.main_image_path width=200 height=200 fit=crop alt=gallery.title %}
+            <!-- end cropped square -->
+            <h4 class="cover--title mb0">{{ gallery.title }}</h4>
+          </a>
+
+     </div>
+
+  {% endfor %}
+
+</section>
