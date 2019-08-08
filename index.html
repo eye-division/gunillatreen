@@ -7,7 +7,7 @@ show_blog: false
 posts_number: 2
 carousel:
   - image: /assets/images/advert-customers.jpg
-    caption: "A test caption"
+    caption: A test caption
     alink: /gallery/test/
   - image: /assets/images/advert-impregnable.jpg
     caption:
@@ -16,19 +16,19 @@ _options:
   layout:
     hidden: true
   image_path:
-    uploads_dir: "assets/images/:year"
+    uploads_dir: 'assets/images/:year'
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
   main_image_path:
-    uploads_dir: "assets/images/:year"
+    uploads_dir: 'assets/images/:year'
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
   content:
-    uploads_dir: "assets/:year"
+    uploads_dir: 'assets/:year'
 _comments:
   main_image_path: Cover image
   main_image_caption: Alt text for cover image
@@ -39,7 +39,8 @@ _comments:
   alink: Optional web link from the slide
   caption: optional caption
 ---
-  {% if page.main_image_path %}
+
+{% if page.main_image_path %}
   <!-- parallax picture please -->
     <figure>
     {% assign alt_text = page.title %}
@@ -50,8 +51,7 @@ _comments:
   {% endif %}
 
   <div class="editable">
-
-
+    
   </div>
 
     {% if page.show_carousel and page.carousel %}
@@ -160,4 +160,4 @@ _comments:
       <p><a href="/news/">Read all news&nbsp;&raquo;</a></p>
 
     </section>
-    {% endif %}
+    {% endif %}</section>
