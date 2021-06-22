@@ -17,7 +17,7 @@ images:
     image_description_markdown: Farrier and horse
   - image_path: /assets/images/445b37ef4cb77.jpg
     image_title: Feet to Feet
-    image_description_markdown:
+    image_description_markdown: Hot shoeing
   - image_path: /assets/images/445b37a195c59.jpg
     image_title: 5 Legs
     image_description_markdown: Farrier at work
