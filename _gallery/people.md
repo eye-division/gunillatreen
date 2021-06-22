@@ -29,7 +29,7 @@ images:
     image_description_markdown: Commission for www.adriennebaba.com&nbsp; Kneading clay.
   - image_path: /assets/images/445b366daaffe.jpg
     image_title: Giles
-    image_description_markdown:
+    image_description_markdown: Giles Macdonald stone carver
   - image_path: /assets/images/445b38b84fa4e.jpg
     image_title: Jo and Dominic
     image_description_markdown: >-
