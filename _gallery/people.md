@@ -41,9 +41,6 @@ images:
   - image_path: /assets/images/461d2c6d86892.jpg
     image_title: The Working Potter
     image_description_markdown: Adrienne Baba working
-  - image_path: /assets/images/461d2ca80a2a7.jpg
-    image_title: The Stone Carver
-    image_description_markdown:
   - image_path: /assets/images/5367ffa6661e4.jpg
     image_title: Mahout
     image_description_markdown:
