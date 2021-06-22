@@ -48,9 +48,6 @@ images:
   - image_path: /assets/images/55e88d306c6e2.jpg
     image_title: Ceiling tiles 2 for above scanner
     image_description_markdown: Replacement ceiling tiles for above another end of scanner.
-  - image_path: /assets/images/57dfece642285.jpg
-    image_title: Allium
-    image_description_markdown: One of a series of images for John Radcliffe Hospital Mortuary. Oxford
   - image_path: /assets/images/57dfed51c2979.jpg
     image_title: Hellebore
     image_description_markdown: One of a series of images for John Radcliffe Hospital Mortuary. Oxford
