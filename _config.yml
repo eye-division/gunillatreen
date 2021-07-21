@@ -1,9 +1,10 @@
-# External gems
-gems:
-  - jekyll-sitemap
+# External gems - updated to plugins in jekyll v3.6
+plugins:
+ # - jekyll-archives # Sorry, not GitHub pages friendly!
+ # - jekyll-assets
+ # - autoprefixer-rails
+   - jekyll-sitemap
 
-exclude:
-  - "/vendor/"
 
 # Site settings
 title: Gunilla Treen
